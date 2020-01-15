@@ -24,10 +24,14 @@ hackintosh for magicbook(i7-8550u) by opencore 0.5.4
 - 亮度控制快捷键 
 - 无线网卡
     - 需要拆机更换无线网卡
+- 蓝牙
+- 隔空传送
+- hdmi接口
 - 触摸板
     - 手势完美
 - 摄像头
 - 声卡 Realtek ALC256 声卡ID为57
+    - 开机如果连接耳机，会有破音；外放偶尔会出现破音，进行一次睡眠唤醒后就能正常
 - 显示器
 - 睡眠正常（一晚掉电不到1%）
   
@@ -36,6 +40,11 @@ hackintosh for magicbook(i7-8550u) by opencore 0.5.4
 
 - 指纹识别
 - 独显 MX150
+- typc接口无法接入显示器，会导致panic
+
+## 其他
+如果是初次安装，请在bios中关闭无线和蓝牙；
+关于如何解锁cfg，请自行爬帖
 
 ## 参考
 hjmmc/Honor-Magicbook(https://github.com/hjmmc/Honor-Magicbook)
