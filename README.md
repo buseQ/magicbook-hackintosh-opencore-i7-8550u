@@ -29,10 +29,13 @@ hackintosh for magicbook(i7-8550u) by opencore 0.5.4
 - 摄像头
 - 声卡 Realtek ALC256 声卡ID为57
 - 显示器
-- 睡眠正常（使用）
+- 睡眠正常（一晚掉电不到1%）
   
 
 ## 不能正常工作的设备
 
 - 指纹识别
 - 独显 MX150
+
+## 参考
+hjmmc/Honor-Magicbook(https://github.com/hjmmc/Honor-Magicbook)
