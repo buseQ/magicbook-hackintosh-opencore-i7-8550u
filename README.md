@@ -45,7 +45,7 @@ hackintosh for magicbook(i7-8550u) by opencore 0.5.4
 ## 其他
 - 如果是初次安装，请在bios中关闭无线和蓝牙
 - 关于如何解锁cfg，请自行爬帖
-- cpu经过cpufriend优化（性能模式）,如果不需要,请自行关闭相关的两个kexts（CPUFriend.kext，CPUFriendDataProvider.kext）
+- cpu经过cpufriend优化（性能模式）,如果是i5-8250u版本,请自行关闭删除相关的两个kexts（CPUFriend.kext，CPUFriendDataProvider.kext）及相关config配置
 
 ## 参考
 hjmmc/Honor-Magicbook(https://github.com/hjmmc/Honor-Magicbook)
