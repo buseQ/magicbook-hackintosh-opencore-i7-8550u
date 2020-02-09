@@ -301,7 +301,7 @@
 			<key>AvoidRuntimeDefrag</key>
 			<true/>
 			<key>DevirtualiseMmio</key>
-			<true/>
+			<false/>
 			<key>DisableSingleUser</key>
 			<false/>
 			<key>DisableVariableWrite</key>
@@ -393,7 +393,7 @@
 				<key>BundlePath</key>
 				<string>Lilu.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Patch engine</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -409,7 +409,7 @@
 				<key>BundlePath</key>
 				<string>VirtualSMC.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>SMC emulator</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -425,7 +425,7 @@
 				<key>BundlePath</key>
 				<string>WhateverGreen.kext</string>
 				<key>Comment</key>
-				<string>Video card</string>
+				<string>Video patches</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -441,7 +441,7 @@
 				<key>BundlePath</key>
 				<string>AppleALC.kext</string>
 				<key>Comment</key>
-				<string>Sound</string>
+				<string>Audio patches</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -893,6 +893,8 @@
 			<false/>
 			<key>DisableIoMapper</key>
 			<false/>
+			<key>DummyPowerManagement</key>
+			<false/>
 			<key>ExternalDiskIcons</key>
 			<false/>
 			<key>IncreasePciBarSize</key>
@@ -912,10 +914,11 @@
 	<key>Misc</key>
 	<dict>
 		<key>BlessOverride</key>
-		<array>
-		</array>
+		<array/>
 		<key>Boot</key>
 		<dict>
+			<key>BuiltinTextRenderer</key>
+			<false/>
 			<key>ConsoleBehaviourOs</key>
 			<string></string>
 			<key>ConsoleBehaviourUi</key>
@@ -923,7 +926,7 @@
 			<key>ConsoleMode</key>
 			<string></string>
 			<key>HibernateMode</key>
-			<string>Auto</string>
+			<string>None</string>
 			<key>HideSelf</key>
 			<true/>
 			<key>PollAppleHotKeys</key>
@@ -931,7 +934,9 @@
 			<key>Resolution</key>
 			<string>1920x1080</string>
 			<key>ShowPicker</key>
-			<false/>
+			<true/>
+			<key>TakeoffDelay</key>
+			<integer>0</integer>
 			<key>Timeout</key>
 			<integer>10</integer>
 			<key>UsePicker</key>
@@ -1034,7 +1039,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>nv_disable=1 dart=0 bpr_probedelay=200 bpr_initialdelay=400 bpr_postresetdelay=400</string>
+				<string>nv_disable=1 dart=0 bpr_probedelay=200 bpr_initialdelay=400 bpr_postresetdelay=400 brcmfx-country=#a</string>
 				<key>csr-active-config</key>
 				<data>5wMAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -1082,7 +1087,7 @@
 			</array>
 		</dict>
 		<key>WriteFlash</key>
-		<false/>
+		<true/>
 	</dict>
 	<key>PlatformInfo</key>
 	<dict>
@@ -1090,14 +1095,14 @@
 		<true/>
 		<key>Generic</key>
 		<dict>
+			<key>AdviseWindows</key>
+			<false/>
 			<key>MLB</key>
 			<string></string>
 			<key>ROM</key>
 			<data></data>
 			<key>SpoofVendor</key>
 			<true/>
-			<key>SupportsCsm</key>
-			<false/>
 			<key>SystemProductName</key>
 			<string>MacBookPro15,2</string>
 			<key>SystemSerialNumber</key>
