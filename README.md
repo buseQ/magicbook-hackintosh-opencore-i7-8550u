@@ -1,5 +1,6 @@
 # magicbook-hackintosh-opencore-i7-8550u
-hackintosh for magicbook(i7-8550u) by opencore 0.5.4
+hackintosh for magicbook(i7-8550u) by opencore 0.5.5
+# OS version:Catalina 10.15.3
 
 # Honor-Magicbook
 华为荣耀 Magicbook i7-8550u 14寸 黑苹果
@@ -14,7 +15,7 @@ hackintosh for magicbook(i7-8550u) by opencore 0.5.4
 | 显卡 | Intel UHD Graphics 620 2048 MB                     |
 | 声卡         | Realtek ALC256           |
 | 摄像头 | hm1091_techfront |
-| 无线网卡       | dw1820a                        |
+| 无线网卡       | dw1820a （CN-096JNT）                       |
 | 触摸板 | ELAN2203 |
 
 
@@ -47,6 +48,11 @@ hackintosh for magicbook(i7-8550u) by opencore 0.5.4
 - 如果是初次安装，请在bios中关闭无线和蓝牙
 - 关于如何解锁cfg，请自行爬帖
 - cpu经过cpufriend优化（性能模式）,如果是i5-8250u版本,请自行关闭删除相关的两个kexts（CPUFriend.kext，CPUFriendDataProvider.kext）及相关config配置
+- 如遇到触摸板没有反应的问题（非无法识别的问题），请尝试摁F11，或许就好了
 
 ## 参考
 hjmmc/Honor-Magicbook(https://github.com/hjmmc/Honor-Magicbook)
+
+## 更新日志
+- 2020.1.15 init commit
+- 2020.2.9 更新oc至0.5.5，系统支持至10.15.3. 添加brcmfx-country=#a参数，修正5g下只能300mbps的问题
